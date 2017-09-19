@@ -109,12 +109,12 @@ Each player will play a card and whoever has the highest value wins.
 	  		$dealt = array_shift($players[$j]);
 	  		$dealtCards[$j] = $dealt; 
 			}
-		
+
 			// gives us the highest valued card in array
 			$maxCard = max($dealtCards);
 			$winners = [];
 
-			$dealtCards_length = count($dealtCards); // 13 cards
+			$dealtCards_length = count($dealtCards); 
 			$winners_length = count($winners);
 
 			// gives us index of winning player, add 1 so it shows accurate player
@@ -139,9 +139,6 @@ Each player will play a card and whoever has the highest value wins.
 		return $roundResults;
   }
 
-		// echo "<pre>";
-		// print_r($playGame);
-		// echo "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -156,9 +153,9 @@ Each player will play a card and whoever has the highest value wins.
 	</header>
 	<div>
 		<?php
-			echo "<pre>";
-			print_r($playGame);
-			echo "</pre>";
+		echo "<pre>";
+		print_r($playGame);
+		echo "</pre>";
 		?>
 	</div>
 </body>
